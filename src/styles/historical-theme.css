@@ -334,6 +334,105 @@
   }
 }
 
+/* Educational Enhancements */
+.course-highlight {
+  background: linear-gradient(
+    135deg,
+    var(--aged-paper) 0%,
+    var(--parchment-bg) 100%
+  );
+  border-left: 4px solid var(--antique-gold);
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 2px 2px 8px var(--shadow-sepia);
+}
+
+.educational-badge {
+  display: inline-block;
+  background: var(--antique-gold);
+  color: var(--dark-ink);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 10px 5px 0;
+  text-shadow: none;
+}
+
+.teacher-card {
+  background: var(--aged-paper);
+  border: 1px solid var(--manuscript-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px var(--shadow-sepia);
+}
+
+.achievement-list {
+  background: linear-gradient(
+    45deg,
+    rgba(212, 175, 55, 0.1),
+    rgba(212, 175, 55, 0.05)
+  );
+  border: 1px solid var(--faded-gold);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.pricing-highlight {
+  background: var(--sepia-brown);
+  color: var(--parchment-bg);
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.schedule-item {
+  background: var(--aged-paper);
+  border: 1px solid var(--manuscript-border);
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted var(--manuscript-border);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+/* Enhanced Responsive for Educational Content */
+@media (max-width: 768px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .educational-badge {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .teacher-card,
+  .achievement-list {
+    padding: 15px;
+  }
+}
+
 /* Print Styles for Historical Theme */
 @media print {
   .historical-navbar {
@@ -350,6 +449,11 @@
 
   .historical-title,
   .historical-text {
+    color: #000;
+  }
+
+  .educational-badge {
+    background: #ddd;
     color: #000;
   }
 }
