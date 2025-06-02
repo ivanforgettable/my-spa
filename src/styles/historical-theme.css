@@ -1,0 +1,355 @@
+/* Historical Theme - Vintage/Classical Styling */
+
+/* Import classical serif font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap");
+
+/* Color palette inspired by aged paper and classical materials */
+:root {
+  --parchment-bg: #f4f1e8;
+  --aged-paper: #ede7d9;
+  --dark-ink: #2c1810;
+  --sepia-brown: #8b4513;
+  --antique-gold: #d4af37;
+  --faded-gold: #c9a876;
+  --old-leather: #654321;
+  --manuscript-border: #a0956b;
+  --shadow-sepia: rgba(139, 69, 19, 0.3);
+}
+
+/* Base historical styling */
+.historical-container {
+  background: linear-gradient(
+    135deg,
+    var(--parchment-bg) 0%,
+    var(--aged-paper) 100%
+  );
+  min-height: 100vh;
+  font-family: "Crimson Text", serif;
+  color: var(--dark-ink);
+  position: relative;
+}
+
+/* Add subtle paper texture overlay */
+.historical-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      transparent 20%,
+      rgba(139, 69, 19, 0.03) 21%,
+      rgba(139, 69, 19, 0.03) 34%,
+      transparent 35%,
+      transparent
+    ),
+    linear-gradient(0deg, rgba(139, 69, 19, 0.02) 50%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Historical Navigation Bar */
+.historical-navbar {
+  background: linear-gradient(
+    180deg,
+    var(--old-leather) 0%,
+    var(--sepia-brown) 100%
+  );
+  padding: 15px 0;
+  border-bottom: 3px solid var(--antique-gold);
+  box-shadow: 0 4px 8px var(--shadow-sepia);
+  position: relative;
+}
+
+.historical-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--antique-gold),
+    transparent
+  );
+}
+
+.historical-navbar::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--faded-gold),
+    transparent
+  );
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.historical-nav-link {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--parchment-bg);
+  text-decoration: none;
+  margin: 0 25px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.historical-nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(212, 175, 55, 0.1),
+    transparent
+  );
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.historical-nav-link:hover {
+  color: var(--antique-gold);
+  transform: translateY(-2px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.historical-nav-link:hover::before {
+  opacity: 1;
+}
+
+.historical-nav-link:active {
+  transform: translateY(0);
+}
+
+/* Historical Page Content */
+.historical-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: var(--parchment-bg);
+  box-shadow: 0 0 20px var(--shadow-sepia);
+  border-left: 1px solid var(--manuscript-border);
+  border-right: 1px solid var(--manuscript-border);
+  min-height: calc(100vh - 100px);
+  position: relative;
+}
+
+.historical-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--manuscript-border),
+    transparent
+  );
+}
+
+/* Historical Typography */
+.historical-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--sepia-brown);
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.2);
+  position: relative;
+}
+
+.historical-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--antique-gold),
+    transparent
+  );
+}
+
+.historical-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--old-leather);
+  margin: 25px 0 15px 0;
+  font-style: italic;
+}
+
+.historical-text {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--dark-ink);
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+/* Historical Lists */
+.historical-list {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--dark-ink);
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+.historical-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.historical-list li::before {
+  content: "⊰";
+  position: absolute;
+  left: 0;
+  color: var(--antique-gold);
+  font-weight: bold;
+}
+
+/* Historical Links */
+.historical-link {
+  color: var(--sepia-brown);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.historical-link:hover {
+  color: var(--antique-gold);
+  border-bottom-color: var(--antique-gold);
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+}
+
+/* Historical Contact Card */
+.historical-contact-card {
+  background: var(--aged-paper);
+  border: 2px solid var(--manuscript-border);
+  border-radius: 8px;
+  padding: 25px;
+  margin: 30px 0;
+  box-shadow: 0 4px 12px var(--shadow-sepia);
+  position: relative;
+}
+
+.historical-contact-card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(
+    45deg,
+    var(--antique-gold),
+    var(--faded-gold),
+    var(--antique-gold)
+  );
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .historical-nav-link {
+    margin: 5px 15px;
+    font-size: 16px;
+  }
+
+  .historical-page {
+    padding: 20px 15px;
+    margin: 0 10px;
+  }
+
+  .historical-title {
+    font-size: 32px;
+  }
+
+  .historical-text {
+    font-size: 16px;
+    text-indent: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .historical-title {
+    font-size: 26px;
+  }
+
+  .historical-nav-link {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .historical-text {
+    font-size: 15px;
+  }
+}
+
+/* Print Styles for Historical Theme */
+@media print {
+  .historical-navbar {
+    display: none;
+  }
+
+  .historical-page {
+    box-shadow: none;
+    border: none;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .historical-title,
+  .historical-text {
+    color: #000;
+  }
+}
