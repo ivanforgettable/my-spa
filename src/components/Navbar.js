@@ -7,11 +7,14 @@ function Navbar() {
         <Link to="/" className="historical-nav-link">
           Главная
         </Link>
+        <Link to="/courses" className="historical-nav-link">
+          Курсы
+        </Link>
         <Link to="/about" className="historical-nav-link">
-          О нас
+          О школе
         </Link>
         <Link to="/contact" className="historical-nav-link">
-          Контакты
+          Записат��ся
         </Link>
       </div>
     </nav>
