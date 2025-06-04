@@ -14,7 +14,7 @@ function Navbar() {
           О школе
         </Link>
         <Link to="/contact" className="historical-nav-link">
-          Записат��ся
+          Записаться
         </Link>
       </div>
     </nav>

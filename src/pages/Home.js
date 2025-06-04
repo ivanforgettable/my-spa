@@ -13,22 +13,22 @@ function Home() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">🏛️ Почему выбирают нас?</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Профессиональные историки:</strong> Наши преподаватели —
             кандидаты и доктора исторических наук
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Интерактивный формат:</strong> Виртуальные экскурсии,
             реконструкции, документальные материалы
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Гибкое расписание:</strong> Обучение в удобное для вас время
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Сертификация:</strong> Официальные сертификаты о прохождении
             курсов
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Небольшие группы:</strong> Индивидуальный подход к каждому
             студенту
           </li>
@@ -42,18 +42,18 @@ function Home() {
 
       <div className="historical-contact-card">
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>15 января:</strong> "Древний Рим: величие империи" (набор
             открыт)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>1 февраля:</strong> "Средневековая Русь" (осталось 3 места)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>15 февраля:</strong> "Эпоха Возрождения" (предварительная
             запись)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>1 марта:</strong> "Великая Отечественная война"
             (предварительная запись)
           </li>
@@ -65,21 +65,26 @@ function Home() {
         Наши образовательные программы подходят для:
       </p>
       <ul className="historical-list">
-        <li>Школьников, готовящихся к ЕГЭ и олимпиадам по истории</li>
-        <li>Студентов исторических факультетов</li>
-        <li>Учителей истории, повышающих квалификацию</li>
-        <li>Всех, кто увлечен историей и хочет углубить свои знания</li>
-        <li>
-          Людей, планирующих путешествия и желающих лучше понимать культурное
-          наследие
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Школьников, готовящихся к ЕГЭ и олимпиадам по истории
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Студентов исторических факультетов
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Учителей истории, повышающих квалификацию
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Всех, кто увлечен историей и хочет углубить свои знания
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Людей, планирующих путешествия и желающих лучше понимать культурное наследие
         </li>
       </ul>
-
       <p className="historical-text">
         Присоединяйтесь к нашему сообществу любителей истории и откройте для
         себя удивительный мир прошлого через призму современного образования!
       </p>
-
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">💡 Пробный урок бесплатно</h2>
         <p className="historical-text">

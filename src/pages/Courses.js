@@ -11,17 +11,17 @@ function Courses() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">📚 Древний мир</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Древний Египет:</strong> От фараонов до пирамид (12 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Античная Греция:</strong> Колыбель демократии и философии
             (10 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Римская империя:</strong> Величие и падение (14 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Древние цивилизации Востока:</strong> Месопотамия, Персия,
             Индия (16 недель)
           </li>
@@ -31,18 +31,18 @@ function Courses() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">🏰 Средневековье</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Византийская империя:</strong> Тысячелетняя история (12
             недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Русь и Россия:</strong> От Рюрика до Петра I (20 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Западная Европа:</strong> Рыцари, замки и крестовые походы
             (14 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Золотая Орда:</strong> Монгольское господство (8 недель)
           </li>
         </ul>
@@ -51,19 +51,19 @@ function Courses() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">🌍 Новое время</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Великие географические открытия:</strong> Эпоха исследований
             (10 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Возрождение:</strong> Культурная революция Европы (12
             недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Реформация:</strong> Религиозные войны и изменения (8
             недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Абсолютизм:</strong> Короли и империи XVII-XVIII веков (10
             недель)
           </li>
@@ -73,18 +73,18 @@ function Courses() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">⚡ Новейшее время</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Французская революция:</strong> Свобода, равенство, братство
             (8 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Наполеоновские войны:</strong> Европа в огне (10 недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>XIX век:</strong> Промышленная революция и национализм (14
             недель)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>XX век:</strong> Мировые войны и современность (18 недель)
           </li>
         </ul>
@@ -96,11 +96,21 @@ function Courses() {
         образовательных технологий:
       </p>
       <ul className="historical-list">
-        <li>Интерактивные видеолекции с историческими реконструкциями</li>
-        <li>Виртуальные экскурсии по музеям и историческим местам</li>
-        <li>Практические задания и исследовательские проекты</li>
-        <li>Групповые дискуссии и семинары в онлайн формате</li>
-        <li>Персональные консультации с преподавателями</li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Интерактивные видеолекции с историческими реконструкциями
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Виртуальные экскурсии по музеям и историческим местам
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Практические задания и исследовательские проекты
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Групповые дискуссии и семинары в онлайн формате
+        </li>
+        <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          Персональные консультации с преподавателями
+        </li>
       </ul>
 
       <p className="historical-text">

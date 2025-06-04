@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <div>
-      <h1 className="historical-title">Записаться на обучение</h1>
+      <h1 className="historical-title">Записаться к нам на занятие</h1>
       <p className="historical-text">
         Готовы начать увлекательное путешествие в мир истории? Свяжитесь с нами
         для записи на курсы, получения консультации или ответов на ваши вопросы
@@ -11,16 +11,16 @@ function Contact() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">📞 Приемная комиссия</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Телефон:</strong> +7-996-533-02-79 (с 9:00 до 18:00)
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>WhatsApp:</strong> Быстрые ответы на вопросы
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Email:</strong> info@history-academy.ru
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Telegram:</strong> @HistoryAcademyBot
           </li>
         </ul>
@@ -37,29 +37,39 @@ function Contact() {
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">📝 Что нужно для записи?</h2>
         <ul className="historical-list">
-          <li>Выбрать интересующий курс из нашего каталога</li>
-          <li>Заполнить простую анкету студента</li>
-          <li>Пройти бесплатное тестирование уровня знаний</li>
-          <li>Получить персональные рек��мендации по обучению</li>
-          <li>Внести оплату и получить доступ к материалам</li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            Выбрать интересующий курс из нашего каталога
+          </li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            Заполнить простую анкету студента
+          </li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            Пройти бесплатное тестирование уровня знаний
+          </li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            Получить персональные рекомендации по обучению
+          </li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            Внести оплату и получить доступ к материалам
+          </li>
         </ul>
       </div>
 
       <div className="historical-contact-card">
         <h2 className="historical-subtitle">💰 Стоимость обучения</h2>
         <ul className="historical-list">
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Стандартный курс (8-12 недель):</strong> 15,000 - 20,000
             руб.
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Расширенный курс (14-20 недель):</strong> 25,000 - 35,000
             руб.
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Индивидуальные занятия:</strong> 2,500 руб./час
           </li>
-          <li>
+          <li style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             <strong>Льготы:</strong> Скидки для школьников, студентов,
             пенсионеров
           </li>
